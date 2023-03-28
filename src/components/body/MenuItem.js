@@ -14,7 +14,11 @@ const MenuItem = (props) => {
           />
 
           <CardImgOverlay>
-            <CardTitle tag="h4" style={{ textAlign: "center" }}>
+            <CardTitle
+              tag="h4"
+              style={{ textAlign: "center", cursor: "pointer" }}
+              onClick={props.onDishSelect}
+            >
               {props.dish.name}
             </CardTitle>
           </CardImgOverlay>
