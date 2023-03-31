@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mahbubHasanTamim/react-restaurant/static/css/main.522f8613.css",
-    "main.js": "/mahbubHasanTamim/react-restaurant/static/js/main.1f192d63.js",
-    "static/js/787.aab8bd84.chunk.js": "/mahbubHasanTamim/react-restaurant/static/js/787.aab8bd84.chunk.js",
-    "index.html": "/mahbubHasanTamim/react-restaurant/index.html",
-    "main.522f8613.css.map": "/mahbubHasanTamim/react-restaurant/static/css/main.522f8613.css.map",
-    "main.1f192d63.js.map": "/mahbubHasanTamim/react-restaurant/static/js/main.1f192d63.js.map",
-    "787.aab8bd84.chunk.js.map": "/mahbubHasanTamim/react-restaurant/static/js/787.aab8bd84.chunk.js.map"
+    "main.css": "/react-restaurant/static/css/main.522f8613.css",
+    "main.js": "/react-restaurant/static/js/main.ac7ba3ec.js",
+    "static/js/787.aab8bd84.chunk.js": "/react-restaurant/static/js/787.aab8bd84.chunk.js",
+    "index.html": "/react-restaurant/index.html",
+    "main.522f8613.css.map": "/react-restaurant/static/css/main.522f8613.css.map",
+    "main.ac7ba3ec.js.map": "/react-restaurant/static/js/main.ac7ba3ec.js.map",
+    "787.aab8bd84.chunk.js.map": "/react-restaurant/static/js/787.aab8bd84.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.522f8613.css",
-    "static/js/main.1f192d63.js"
+    "static/js/main.ac7ba3ec.js"
   ]
 }
