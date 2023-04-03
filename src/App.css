@@ -9,5 +9,27 @@
   font-size: 1.5rem;
   color: #333;
 }
+a.my-brand {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+button {
+  border: none !important;
+}
+.navbar {
+  justify-content: right;
+}
 
+.nav-link.active {
+  color: orange !important;
+}
+@media screen and (max-width: 767px) {
+  .navbar {
+    justify-content: center;
+  }
+  a.my-brand {
+    position: unset;
+  }
+}
 /* navigation end */
