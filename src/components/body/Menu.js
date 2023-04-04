@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Button, Modal, ModalBody, ModalFooter } from "reactstrap";
 import DISHES from "../../data/dishes";
 import DishDetail from "./DishDetail";
 import MenuItem from "./MenuItem";
@@ -7,10 +8,20 @@ class Menu extends Component {
   state = {
     dishes: DISHES,
     selectedDish: null,
+    modalOpen: false,
   };
 
   onDishSelect = (dish) => {
-    this.setState({ selectedDish: dish });
+    this.setState({
+      selectedDish: dish,
+      modalOpen: !this.state.modalOpen,
+    });
+  };
+
+  toggleModal = () => {
+    this.setState({
+      modalOpen: !this.state.modalOpen,
+    });
   };
   render() {
     const menu = this.state.dishes.map((item) => {
@@ -31,8 +42,14 @@ class Menu extends Component {
     return (
       <div className="container">
         <div className="row">
-          <div className="col-5">{menu}</div>
-          <div className="col-7">{selectedDish}</div>
+          {menu}
+
+          <Modal isOpen={this.state.modalOpen} onClick={this.toggleModal}>
+            <ModalBody>{selectedDish}</ModalBody>
+            <ModalFooter>
+              <Button onClick={this.toggleModal}>Close</Button>
+            </ModalFooter>
+          </Modal>
         </div>
       </div>
     );
