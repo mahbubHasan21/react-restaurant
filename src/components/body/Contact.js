@@ -27,7 +27,6 @@ class Contact extends Component {
     this.setState({
       [name]: [value],
     });
-    console.log(name, value);
   };
   handleSubmit = (event) => {
     console.log(this.state);
