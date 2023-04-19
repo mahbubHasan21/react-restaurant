@@ -33,6 +33,7 @@ class Contact extends Component {
     event.preventDefault();
   };
   render() {
+    document.title = "Contact";
     return (
       <div>
         <div className="container">

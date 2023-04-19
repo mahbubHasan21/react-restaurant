@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Modal, ModalBody, ModalFooter } from "reactstrap";
+import COMMENTS from "../../data/comments";
 import DISHES from "../../data/dishes";
 import DishDetail from "./DishDetail";
 import MenuItem from "./MenuItem";
@@ -7,6 +8,7 @@ import MenuItem from "./MenuItem";
 class Menu extends Component {
   state = {
     dishes: DISHES,
+    comments: COMMENTS,
     selectedDish: null,
     modalOpen: false,
   };
@@ -24,6 +26,8 @@ class Menu extends Component {
     });
   };
   render() {
+    document.title = "Menu";
+
     const menu = this.state.dishes.map((item) => {
       return (
         <MenuItem
@@ -34,9 +38,14 @@ class Menu extends Component {
       );
     });
 
-    let selectedDish = null;
+    let dishDetail = null;
     if (this.state.selectedDish != null) {
-      selectedDish = <DishDetail dish={this.state.selectedDish} />;
+      const comments = this.state.comments.filter((comment) => {
+        return comment.dishId === this.state.selectedDish.id;
+      });
+      dishDetail = (
+        <DishDetail dish={this.state.selectedDish} comments={comments} />
+      );
     }
 
     return (
@@ -45,7 +54,7 @@ class Menu extends Component {
           {menu}
 
           <Modal isOpen={this.state.modalOpen} onClick={this.toggleModal}>
-            <ModalBody>{selectedDish}</ModalBody>
+            <ModalBody>{dishDetail}</ModalBody>
             <ModalFooter>
               <Button onClick={this.toggleModal}>Close</Button>
             </ModalFooter>
