@@ -18,7 +18,7 @@ const COMMENTS = [
   },
   {
     dishId: 1,
-    id: 0,
+    id: 2,
     rating: 3.5,
     comment: "Imagine all the eatables, living in conFusion!",
     author: "Shanto",
@@ -26,7 +26,7 @@ const COMMENTS = [
   },
   {
     dishId: 2,
-    id: 0,
+    id: 3,
     rating: 5,
     comment: "Imagine all the eatables, living in conFusion!",
     author: "Maruf",
@@ -34,7 +34,7 @@ const COMMENTS = [
   },
   {
     dishId: 2,
-    id: 1,
+    id: 4,
     rating: 4,
     comment:
       "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
@@ -43,7 +43,7 @@ const COMMENTS = [
   },
   {
     dishId: 3,
-    id: 0,
+    id: 5,
     rating: 5,
     comment: "Imagine all the eatables, living in conFusion!",
     author: "Mahedi",
@@ -51,7 +51,7 @@ const COMMENTS = [
   },
   {
     dishId: 0,
-    id: 1,
+    id: 6,
     rating: 4,
     comment:
       "Sends anyone to heaven, I wish I could get my mother-in-law to eat it!",
