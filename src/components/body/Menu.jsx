@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { Button, Modal, ModalBody, ModalFooter } from "reactstrap";
 import { addComment } from "../../redux/actionCreators";
 import DishDetail from "./DishDetail";
+import Loading from "./Loading";
 import MenuItem from "./MenuItem";
 
 const mapStateToProps = (state) => {
@@ -67,6 +68,8 @@ class Menu extends Component {
     return (
       <div className="container">
         <div className="row">
+          <Loading />
+
           {menu}
 
           <Modal isOpen={this.state.modalOpen}>
